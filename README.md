@@ -4,7 +4,7 @@ This is my (Matt Speers) examples of python
 
 
 
-### Addition t
+### Addition Example
 
 This is example of doing addition on two number. 
 

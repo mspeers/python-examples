@@ -88,7 +88,7 @@ if ( __name__ == '__main__'):
 
 else:
     # debug if you like see to what is calling method like lib, standalone, etc...    
-    print (f'name is  {__name__}')
+    print (f'Unkown calling addition.py python application. This was design for command line application. The call was  {__name__}')
 
 # Alway run unit test
 unittest.main()
