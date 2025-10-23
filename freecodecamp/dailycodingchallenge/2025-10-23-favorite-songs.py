@@ -5,7 +5,6 @@ Given an array of song objects representing your iPod playlist, return an array 
 
     Each object will have a "title" property (string), and a "plays" property (integer).
 '''
-
 def favorite_songs(playlist):
     number_songs = 2
     # sort by play times
