@@ -17,7 +17,8 @@ def count(text):
     return count
 
 '''
-Signature Validation
+
+
 
 Given a message string, a secret key string, and a signature number, determine if the signature is valid using this encoding method:
 
