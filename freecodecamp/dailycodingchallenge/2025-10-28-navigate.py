@@ -1,7 +1,7 @@
 
 
 '''
-
+Navigator
 
 On October 28, 1994, Netscape Navigator was released, helping millions explore the early web.
 

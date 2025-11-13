@@ -1,21 +1,23 @@
 
 
+"""
+2nd Largest
+
+Sorts positive or negative numbers in an and gives us second largest number.
+
+Parameters:
+- numbers: list
+    An unsorted list of numbers.
+
+Returns:
+- list:
+    A sorted list of numbers, with positive numbers first followed by negative numbers.
+
+Raises:
+- TypeError:
+    Raises an error if the input is not a list.
+"""
 def second_largest(numbers):
-    """
-    Sorts positive or negative numbers in an and gives us second largest number.
-
-    Parameters:
-    - numbers: list
-        An unsorted list of numbers.
-
-    Returns:
-    - list:
-        A sorted list of numbers, with positive numbers first followed by negative numbers.
-
-    Raises:
-    - TypeError:
-        Raises an error if the input is not a list.
-    """
     # Checking if the input is a list
     if not isinstance(numbers, list):
         raise TypeError("Input should be a list.")
