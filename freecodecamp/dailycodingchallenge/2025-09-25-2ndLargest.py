@@ -37,26 +37,59 @@ def second_largest(numbers):
 
     return sorted_list[-2]
 
-# Unit tests for sort_numbers function.
+
+'''
+1. second_largest([1, 2, 3, 4]) should return 3.
+2. second_largest([20, 139, 94, 67, 31]) should return 94.
+3. second_largest([2, 3, 4, 6, 6]) should return 4.
+4. second_largest([10, -17, 55.5, 44, 91, 0]) should return 55.5.
+5. second_largest([1, 0, -1, 0, 1, 0, -1, 1, 0]) should return 0.
+'''
+
+
+
+# Unit tests 
+
 import unittest
+from parameterized import parameterized
 
-class TestSortNumbers(unittest.TestCase):
+class TestSequence(unittest.TestCase):
+    @parameterized.expand([
+        [ [1, 2, 3, 4], 3],
+        [ [20, 139, 94, 67, 31], 94],
+        [ [2, 3, 4, 6, 6], 4],
+        [ [10, -17, 55.5, 44, 91, 0], 55.5],
+        [ [1, 0, -1, 0, 1, 0, -1, 1, 0], 0],
+    ])
+    def test_sequence(self, test_data, expected):
+        # self.assertEqual(test_data,expected)
+        self.assertEqual(second_largest(test_data), expected, f"Failed - Expect:{expected}, test_data:{test_data}")
+        print(f"Expect:{expected}, test_data:{test_data}")
 
-    def test_sort_positive_numbers(self):
-        """
-        Tests sorting a list of positive numbers.
-        """
-        numbers = [5, 2, 8, 1, 3]
-        sorted_numbers = second_largest(numbers)
-        self.assertEqual(second_largest, 3)
 
-    def test_sort_positive_numbers(self):
-        """
-        Tests sorting a list of positive and negative numbers.
-        """
-        numbers = [1, 0, -1, 0, 1, 0, -1, 1, 0]
-        sorted_numbers = second_largest(numbers)
-        self.assertEqual(second_largest, 0)
+
+
+
+# # Unit tests for sort_numbers function.
+# import unittest
+
+# class TestSortNumbers(unittest.TestCase):
+
+#     def test_sort_positive_numbers(self):
+#         """
+#         Tests sorting a list of positive numbers.
+#         """
+#         numbers = [5, 2, 8, 1, 3]
+#         sorted_numbers = second_largest(numbers)
+#         self.assertEqual(second_largest, 3)
+
+#     def test_sort_positive_numbers(self):
+#         """
+#         Tests sorting a list of positive and negative numbers.
+#         """
+#         numbers = [1, 0, -1, 0, 1, 0, -1, 1, 0]
+#         sorted_numbers = second_largest(numbers)
+#         self.assertEqual(second_largest, 0)
 
 # Manual Run
 if __name__ == "__main__":

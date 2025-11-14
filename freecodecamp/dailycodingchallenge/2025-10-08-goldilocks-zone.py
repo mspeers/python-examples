@@ -40,8 +40,7 @@ if __name__ == "__main__":
                 [0.5,[0.28, 0.41]]):
         result = goldilocks_zone(item[0])
         print (result)
-
-
+    unittest.main()
 # Unit tests 
 import unittest
 

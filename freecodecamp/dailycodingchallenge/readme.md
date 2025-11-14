@@ -20,6 +20,7 @@ The following are the daily code for quesitons:
 11. [Vowels and Consonants](./2025-11-11-count-vowels-consonants.py)
 12. [Email Signature Generator](./2025-11-12-generate-signature.py)
 13. [Array Shift](./2025-11-13-shift-array.py)
+14. [Days Until Weekend](./2025-11-14-days-until-weekend.py)
 
 ### 2025, October
 The following are the daily code for quesitons:
@@ -64,6 +65,7 @@ The following are the daily code for quesitons:
 ### 2025, September
 The following are the daily code for quesitons:
 
+7. [Roman Numeral Parser](./2025-09-07-parse-roman-numeral.py)
 8. [Acronym Builder](./2025-09-08-build-acronym.py)
 9. [Unique Characters](./2025-09-09-all-unique.py)
 10. [Array Diff](./2025-09-10-array-diff.py)
