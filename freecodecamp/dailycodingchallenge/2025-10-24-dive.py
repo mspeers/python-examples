@@ -53,18 +53,23 @@ if __name__ == "__main__":
 5. dive([[ "-", "-", "-"], [ "-", "-", "-"], [ "O", "X", "X"]], [2, 0]) should return "Recovered".
 6. dive([[ "-", "-", "-"], [ "-", "-", "-"], [ "O", "X", "X"]], [1, 2]) should return "Empty".
 '''
+
 # Unit tests 
+
 import unittest
-class TestSample(unittest.TestCase):
-    def test_sample(self):
-        results = [ (([{"title": "Sync or Swim", "plays": 3}, {"title": "Byte Me", "plays": 1}, {"title": "Earbud Blues", "plays": 2} ] ),["Sync or Swim", "Earbud Blues"]),
-                    (([{"title": "Skip Track", "plays": 98}, {"title": "99 Downloads", "plays": 99}, {"title": "Clickwheel Love", "plays": 100} ]),["Clickwheel Love", "99 Downloads"]),
-                    (([{"title": "Song A", "plays": 42}, {"title": "Song B", "plays": 99}, {"title": "Song C", "plays": 75} ]),["Song B", "Song C"])
-                  ]
+from parameterized import parameterized
 
-        for test_data, expected in results:
-            with self.subTest(expected=expected, test_data=test_data):
-                self.assertEqual(dive(test_data), expected, f"Failed - Expect:{expected}, test_data:{test_data}")
-                print(f"test_data: {test_data}")
-
+class TestSequence(unittest.TestCase):
+    @parameterized.expand([
+        [ ([[ "-", "X"], [ "-", "X"], [ "-", "O"]], [2, 1]), "Recovered"],
+        [ ([[ "-", "X"], [ "-", "X"], [ "-", "O"]], [2, 0]), "Empty"],
+        [ ([[ "-", "X"], [ "-", "O"], [ "-", "O"]], [1, 1]), "Found"],
+        [ ([[ "-", "-", "-"], [ "X", "O", "X"], [ "-", "-", "-"]], [1, 2]), "Found"],
+        [ ([[ "-", "-", "-"], [ "-", "-", "-"], [ "O", "X", "X"]], [2, 0]), "Recovered"],
+        [ ([[ "-", "-", "-"], [ "-", "-", "-"], [ "O", "X", "X"]], [1, 2]), "Empty"],
+    ])
+    def test_sequence(self, test_data, expected):
+        # self.assertEqual(test_data,expected)
+        self.assertEqual(dive(*test_data), expected, f"Failed - Expect:{expected}, test_data:{test_data}")
+        print(f"Expect:{expected}, test_data:{test_data}")
 

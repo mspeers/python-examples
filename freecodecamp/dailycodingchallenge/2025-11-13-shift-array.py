@@ -45,3 +45,20 @@ if __name__ == "__main__":
 4. shift_array(["alpha", "bravo", "charlie"], -11) should return ["bravo", "charlie", "alpha"].
 5. shift_array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 15) should return [5, 6, 7, 8, 9, 0, 1, 2, 3, 4].
 '''
+# Unit tests 
+
+import unittest
+from parameterized import parameterized
+
+class TestSequence(unittest.TestCase):
+    @parameterized.expand([
+        [ ([1, 2, 3], 1),  [2, 3, 1]],
+        [ ([1, 2, 3], -1), [3, 1, 2]],
+        [ (["alpha", "bravo", "charlie"], 5), ["charlie", "alpha", "bravo"]],
+        [ (["alpha", "bravo", "charlie"], -11), ["bravo", "charlie", "alpha"]],
+        [ ([0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 15), [5, 6, 7, 8, 9, 0, 1, 2, 3, 4]],
+    ])
+    def test_sequence(self, test_data, expected):
+        # self.assertEqual(test_data,expected)
+        self.assertEqual(shift_array(*test_data), expected, f"Failed - Expect:{expected}, test_data:{test_data}")
+        print(f"Expect:{expected}, test_data:{test_data}")

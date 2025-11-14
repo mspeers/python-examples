@@ -47,5 +47,5 @@ class TestSample(unittest.TestCase):
 
         for test_data, expected in results:
             with self.subTest(expected=expected, test_data=test_data):
-                self.assertEqual(digits_or_letters(*test_data), expected, f"Failed - Expect:{expected}, test_data:{test_data}")
+                self.assertEqual(digits_or_letters(test_data), expected, f"Failed - Expect:{expected}, test_data:{test_data}")
 
