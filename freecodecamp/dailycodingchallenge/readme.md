@@ -21,6 +21,11 @@ The following are the daily code for quesitons:
 12. [Email Signature Generator](./2025-11-12-generate-signature.py)
 13. [Array Shift](./2025-11-13-shift-array.py)
 14. [Days Until Weekend](./2025-11-14-days-until-weekend.py)
+15. [GCD](./2025-11-15-gcd.py)
+16. [TBA]()
+17. [Fingerprint Test](./2025-11-17-is-match.py)
+18. [100 Characters](./2025-11-18-one-hundred.py)
+19. [Markdown Heading Converter](./2025-11-19-convert.py)
 
 ### 2025, October
 The following are the daily code for quesitons:
