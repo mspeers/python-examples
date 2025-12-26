@@ -4,6 +4,15 @@ This is folder of my work on daily coding challenge:
 
 This is in progress work
 
+### 2025, Dec
+The following are the daily code for quesitons:
+
+1. [Miles to Kilometers](./2025-12-01-miles-kms.py)
+2. [Camel to Snake](./2025-12-02-Camel-Case.py)
+3. [Markdown Ordered List Item Converter](./2025-12-03-convert-list-item.py)
+11. [Roman Numeral Builder](./2025-12-11-to-roman.py)
+
+
 ### 2025, November
 The following are the daily code for quesitons:
 
@@ -22,10 +31,23 @@ The following are the daily code for quesitons:
 13. [Array Shift](./2025-11-13-shift-array.py)
 14. [Days Until Weekend](./2025-11-14-days-until-weekend.py)
 15. [GCD](./2025-11-15-gcd.py)
-16. [TBA]()
+16. [Rectangle Count](./2025-11-16-count-rectangles.py)
 17. [Fingerprint Test](./2025-11-17-is-match.py)
 18. [100 Characters](./2025-11-18-one-hundred.py)
 19. [Markdown Heading Converter](./2025-11-19-convert.py)
+20. [Longest Word](./2025-11-20-longest-word.py)
+21. [Least Common Multiple](./2025-11-21-lcm.py)
+22. [Recipe Scaler](./2025-11-22-scale-recipe.py)
+23. [Character Count](./2025-11-23-count-char.py)
+24. [Message Validator](./2025-11-24-Valid-Message.py)
+25. [FizzBuzz](./2025-11-25-fizz-buzz.py)
+
+26. [BuzzFizz](./2025-11-26-is-fizz-buzz.py)
+27. [What's My Age Again?](./2025-11-27-calculate-age.py)
+28. [Word Guesser](./2025-11-28-compare.py)
+29. [Word Guesser](./2025-11-29-get-next-locaiton.py)
+30. [AI Detector](./2025-11-30-detect-ai.py)
+
 
 ### 2025, October
 The following are the daily code for quesitons:
